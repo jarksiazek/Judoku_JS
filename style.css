@@ -1,0 +1,101 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 27, 2017, 11:19:10 AM
+    Author     : 501956422
+*/
+
+h1{
+    color:white;
+    text-align: center;
+}
+
+#main_div {
+    margin: auto;
+    width: 576px;
+    height: 576px;
+}
+
+
+.btn_0 {
+    width: 60px;
+    height: 60px;
+    font-size:1.3em;
+    border-radius: 5px;
+    background-color: white;
+    margin:2px;
+    font-weight: bold;
+    /*color: white !important;*/
+/*    padding-right: 250px;*/
+    /*overflow: scroll;*/
+    
+    
+}
+
+.btn_1 {
+    width: 60px;
+    height: 60px;
+    font-size:1.3em;
+    border-radius: 5px;
+    background-color: white;
+    margin:2px;
+    font-weight: bold;
+   
+}
+
+
+#cell_1, #cell_2, #cell_3,#cell_10, #cell_11, #cell_12,#cell_19, #cell_20, #cell_21,
+#cell_61, #cell_62, #cell_63,#cell_70, #cell_71, #cell_72,#cell_79, #cell_80, #cell_81
+{
+    color: #5AFF00;    
+    border: 2px solid #5AFF00;
+}
+
+#cell_4, #cell_5, #cell_6,#cell_13, #cell_14, #cell_15,#cell_22, #cell_23, #cell_24,
+#cell_58, #cell_59, #cell_60,#cell_67, #cell_68, #cell_69,#cell_76, #cell_77, #cell_78
+{
+    color: #E89C11;    
+    border: 2px solid #E89C11;
+}
+
+#cell_7, #cell_8, #cell_9,#cell_16, #cell_17, #cell_18,#cell_25, #cell_26, #cell_27,
+#cell_55, #cell_56, #cell_57,#cell_64, #cell_65, #cell_66,#cell_73, #cell_74, #cell_75
+{
+    color: #FF1F6E;    
+    border: 2px solid #FF1F6E;
+}
+
+#cell_28, #cell_29, #cell_30,#cell_37, #cell_38, #cell_39,#cell_46, #cell_47, #cell_48,
+#cell_34, #cell_35, #cell_36,#cell_43, #cell_44, #cell_45,#cell_52, #cell_53, #cell_54
+{
+    color: #1127E8;    
+    border: 2px solid #1127E8;
+}
+
+#cell_31, #cell_32, #cell_33,#cell_40, #cell_41, #cell_42,#cell_49, #cell_50, #cell_51
+{
+    color: #FF00FD;    
+    border: 2px solid #FF00FD;
+}
+
+
+.btn_0:hover {
+    -webkit-animation: move_btn 1s infinite;
+    animation: move_btn 0.3s infinite linear;
+}
+
+
+
+@-webkit-keyframes move_btn {
+   from  {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+   to {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}@keyframes move_btn {
+   from  {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+   to {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}
+
+
+
