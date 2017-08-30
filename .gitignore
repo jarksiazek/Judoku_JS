@@ -1,0 +1,12 @@
+# Build and Release Folders
+
+
+# Other files and folders
+
+
+# Executables
+*.swf
+*.air
+*.ipa
+*.apk
+
