@@ -1,3 +1,5 @@
+  Init();
+  Start();
 
 function Init(){
     
@@ -15,13 +17,9 @@ function Init(){
     } 
 html+="</div>";
 document.write(html);
+document.getElementById("main_div").style.display="none";
 
 }
-
-
-Init();
-Start();
-
 
 function Start(){
    
@@ -33,7 +31,7 @@ function Start(){
         if(res===true){ 
             
             Arr_F=[];            
-
+            Arr_J=[];
             for(var i=0;i<9;i++){ 
                 
                 for(var y=0;y<9;y++){
@@ -43,14 +41,17 @@ function Start(){
                     if (rand_numb<50){rand_numb="btn_0";}else{rand_numb="btn_1";}
 
                     Arr_F[i+9*y]={Nbr:eval("Arr_1"+(parseInt(y)+1))[i],Bln:rand_numb};
-                    
-                     
+                    Arr_J[i+9*y]={Nbr:eval("Arr_1"+(parseInt(y)+1))[i]};
+
+                    document.getElementById("main_div").style.display="block"; 
                 }     
             }
             
             var JsonArr_F = JSON.stringify(Arr_F);
-            
-           //console.log(Arr_F);
+            var JsonArr_J = JSON.stringify(Arr_J);
+           
+           sendJSON(Arr_J);            
+                      
             for(i in Arr_F){
                 document.getElementById("cell_"+(parseInt(i)+1)).innerHTML=Arr_F[i]["Nbr"];
                 document.getElementById("cell_"+(parseInt(i)+1)).className=Arr_F[i]["Bln"];
@@ -58,9 +59,21 @@ function Start(){
             
            }
         
-    } while (res===false)
-    
+    } while (res===false)  
         
+}
+
+function sendJSON(Arr_J){
+    var JsonArr_J = "json="+JSON.stringify(Arr_J);
+   console.log(JsonArr_J);
+      
+    var req=createReq();
+    
+    url='Data/handler.php',
+    req.open("POST",url,false);
+    req.setRequestHeader("Content-type", "application/json");
+    req.send(JsonArr_J);
+      
 }
 
 function MakeNewTable(){
@@ -253,7 +266,7 @@ function MakeNewTable(){
         {row:"Arr_19",sq:"Arr_9"}
     ];
     
-  console.log(Arr_supp);
+  //console.log(Arr_supp);
  
     for(y in Arr_supp){           
         
@@ -296,7 +309,7 @@ function MakeNewTable(){
 //    console.log(Arr_16);
 //    console.log(Arr_17);
 //    console.log(Arr_18);
-//    console.log(Arr_19);
+//   console.log(Arr_19);
     return true;
     
    
