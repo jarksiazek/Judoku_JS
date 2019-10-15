@@ -6,3 +6,17 @@ Action Items:
 1. Add Fancy loader 
 2. Save result into file 
 3. Load results from the file
+
+
+Angular
+
+Boolean value from string: 
+  !!'false' -> true
+
+Setters: 
+  @Input() set data(value){
+    value && this.init(value);
+  }
+  
+  
+  
