@@ -18,5 +18,14 @@ Setters:
     value && this.init(value);
   }
   
-  
-  
+ json view in html: 
+  <pre>{{ data$ | async | json }}</pre>
+
+contentChild?:
+@ContentChild(TempRef)
+
+
+Websocket:
+
+Code from training
+https://rogu@bitbucket.org/rogu/demo-ng-adv-app.git
