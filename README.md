@@ -65,3 +65,6 @@ https://github.com/juristr/egghead-intro-angular-elements/blob/08-angularjs-meet
 PWA
 https://medium.com/poka-techblog/turn-your-angular-app-into-a-pwa-in-4-easy-steps-543510a9b626
 https://www.youtube.com/watch?v=othhfZ0mGjU&t=1395s
+
+GraphQL
+https://demo-gql.debugger.pl/graphql
