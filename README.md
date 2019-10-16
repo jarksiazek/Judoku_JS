@@ -10,6 +10,11 @@ Action Items:
 
 Angular
 
+Setter:
+  @Input() set formConfig(config) {
+    config && this.createForm(config);
+  }
+
 Boolean value from string: 
   !!'false' -> true
 
@@ -26,6 +31,17 @@ contentChild?:
 
 
 Websocket:
+websocket.org
 
 Code from training
 https://rogu@bitbucket.org/rogu/demo-ng-adv-app.git
+
+Router 
+this.router.params.subscribe
+
+Devtools angular
+- angular augury
+
+Guard - logika przed ladowaniem componentu
+
+FormBuilder
