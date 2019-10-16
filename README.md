@@ -42,3 +42,7 @@ Devtools angular
 Guard - logika przed ladowaniem componentu
 
 FormBuilder
+
+PWA: 
+lighthouse - analizuje aplikacje
+
