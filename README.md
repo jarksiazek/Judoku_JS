@@ -10,6 +10,9 @@ Action Items:
 
 Angular
 
+Operators:
+theLatestFrom
+
 Setter:
   @Input() set formConfig(config) {
     config && this.createForm(config);
@@ -17,18 +20,12 @@ Setter:
 
 Boolean value from string: 
   !!'false' -> true
-
-Setters: 
-  @Input() set data(value){
-    value && this.init(value);
-  }
   
- json view in html: 
+ json view in html with json view: 
   <pre>{{ data$ | async | json }}</pre>
 
 contentChild?:
 @ContentChild(TempRef)
-
 
 Websocket:
 websocket.org
